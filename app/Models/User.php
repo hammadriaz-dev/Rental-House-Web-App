@@ -51,4 +51,20 @@ class User extends Authenticatable
     public function properties(){
         return $this->hasMany(Property::class);
     }
+
+    public function sendMessages(){
+        return $this->hasMany(Message::class, 'sender_id');
+    }
+
+    public function receiveMessages(){
+        return $this->hasMany(Message::class, 'receiver_id');
+    }
+
+    public function bookings(){
+        return $this->hasMany(Booking::class);
+    }
+    public function payment(){
+        return $this->hasMany(Payment::class);
+    }
 }
+

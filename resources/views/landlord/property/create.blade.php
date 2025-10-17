@@ -15,7 +15,7 @@
         </div>
 
         <!-- Form for creating a new property -->
-        <form action="" method="POST" enctype="multipart/form-data" class="space-y-6">
+        <form action="{{ route('properties.store') }}" method="POST" enctype="multipart/form-data" class="space-y-6">
             @csrf
 
             <!-- Property Title -->

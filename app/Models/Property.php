@@ -21,6 +21,7 @@ class Property extends Model
         'city',
         'rent',
         'status',
+        'moderation_status',
     ];
 
     public static function statuses(){
@@ -29,5 +30,21 @@ class Property extends Model
 
     public function user(){
         return $this->belongsTo(User::class);
+    }
+
+    public function images(){
+        return $this->hasMany(PropertyImage::class);
+    }
+
+    public function primaryImage(){
+        return $this->hasOne(PropertyImage::class)->where('is_primary', true);
+    }
+
+    public function messages(){
+        return $this->hasMany(Message::class);
+    }
+
+    public function bookings(){
+        return $this->hasMany(Booking::class);
     }
 }

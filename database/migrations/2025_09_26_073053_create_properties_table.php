@@ -15,13 +15,12 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('title');
-            $table->string('image');
-            $table->string('video');
             $table->text('description');
             $table->string('address');
             $table->string('city');
             $table->decimal('rent', 10, 2);
             $table->string('status')->default('available');
+            $table->string('video')->nullable();
             $table->timestamps();
         });
     }
