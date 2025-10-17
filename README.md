@@ -1,61 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏠 House Rental Web Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A **Rental House Web App** designed to make property renting simple, transparent, and efficient.
+It connects **landlords** who list their properties and **tenants** who browse, book, and rent homes — all within one seamless platform.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📘 Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The **House Rental Web Application** is built with **Laravel (PHP)** for the backend and **Tailwind CSS + JavaScript** for the frontend.
+It follows the **MVC (Model-View-Controller)** architecture, ensuring scalability, maintainability, and performance.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🎯 Core Objectives
+- Provide a centralized platform for listing and renting homes
+- Simplify communication between landlords and tenants
+- Offer secure property booking and payment management
+- Reduce physical visits and manual paperwork
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🖼️ Visual Showcase
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Get a quick look at the application's interface:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Home Page | Property Listing | User Dashboard |
+| :---: | :---: | :---: |
+| ![A screenshot of the application's main home page](public/assets/images/homepage.png) | ![A screenshot showing a property listing detail page](public/assets/images/listing.png) | ![A screenshot of the tenant or landlord user dashboard](public/assets/images/dashboard.png) |
 
-## Laravel Sponsors
+***Note:*** *You must replace the placeholder image names (e.g., `homepage.png`) above with your actual file names.*
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ⚙️ Key Features
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+✅ User Authentication (Landlords, Tenants, Admin)
+✅ Property Listing & Management
+✅ Smart Property Search & Filtering (by city, price, or type)
+✅ Booking and Application System
+✅ Messaging System Between Users
+✅ Integrated Payment Handling
+✅ Admin Panel for Full Control
+✅ Review & Rating System
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🧱 Architecture Overview
 
-## Code of Conduct
+**Pattern:** Model–View–Controller (MVC)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Model:** Handles database logic (via Laravel Eloquent ORM)
+- **View:** Built using Blade templates + Tailwind CSS for responsive UI
+- **Controller:** Manages requests and responses between Model and View
 
-## Security Vulnerabilities
+**Main Entities:**
+- User (Admin, Tenant, Landlord)
+- Property
+- Booking
+- Payment
+- Message
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 💾 Database Overview
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Table | Description |
+|-------|--------------|
+| **Users** | Stores tenant, landlord, and admin details |
+| **Properties** | Contains property listings owned by landlords |
+| **Bookings** | Tracks tenant bookings and approvals |
+| **Payments** | Logs all payment records |
+| **Messages** | Stores user-to-user communication |
+
+---
+
+## 🧑‍💻 Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/hammadriaz-dev/Rental-House-Web-App.git](https://github.com/hammadriaz-dev/Rental-House-Web-App.git)
+cd Rental-House-Web-App
