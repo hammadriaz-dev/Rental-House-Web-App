@@ -24,7 +24,7 @@ Get a quick look at the application's interface:
 
 | Home Page | Property Listing | User Dashboard |
 | :---: | :---: | :---: |
-| ![A screenshot of the application's main home page](public/assets/images/homepage.png) | ![A screenshot showing a property listing detail page](public/assets/images/listing.png) | ![A screenshot of the tenant or landlord user dashboard](public/assets/images/dashboard.png) |
+| ![A screenshot of the application's main home page](public/assets/images/frontend-home.png) | ![A screenshot showing a property listing detail page](public/assets/images/listing.png) | ![A screenshot of the tenant or landlord user dashboard](public/assets/images/landlord-dashboard.png) |
 
 ***Note:*** *You must replace the placeholder image names (e.g., `homepage.png`) above with your actual file names.*
 
